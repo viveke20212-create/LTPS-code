@@ -1,8 +1,11 @@
 #include <stdio.h>
-
 int main() {
-  int a = 5;
-  float f = 23.4567;
-  char ch = 'k';
-  void*
+  int a = 10;
+  float b = 5.5;
+  void* ptr;
+  ptr = &a;
+  printf("Integer value = %d\n", *(int*)ptr);  // Cast to int
+  ptr = &b;
+  printf("Float value = %.2f\n", *(float*)ptr);  // Cast to float
+  return 0;
 }
